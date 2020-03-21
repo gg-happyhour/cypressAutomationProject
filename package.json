@@ -1,0 +1,29 @@
+{
+  "name": "cypressautomationproject",
+  "version": "1.0.0",
+  "description": "Cypress Automation Project for learning cypress.io and using modern framework. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giri-gonzai/cypressAutomationProject.git"
+  },
+  "keywords": [
+    "cypress.io",
+    "test",
+    "automation",
+    "framework"
+  ],
+  "author": "Giri Gonsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giri-gonzai/cypressAutomationProject/issues"
+  },
+  "homepage": "https://github.com/giri-gonzai/cypressAutomationProject#readme",
+  "dependencies": {
+    "cypress": "^4.2.0",
+    "prettier": "^1.19.1"
+  }
+}
