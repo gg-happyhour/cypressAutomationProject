@@ -12,10 +12,19 @@ describe('Test Case: for running Cypress tests', () => {
         cy.url();
     });
 
-    it.only('Test Step: Sending input onto text field & verifying the input', () => {
+    it('Test Step: Sending input onto text field & verifying the input', () => {
         cy.visit('https://example.cypress.io/commands/actions')
           .url().should('have','commands')
           .get('.action-email')
           .type('cypress@test.com').should('have.value','cypress@test.com');
-    }); 
+    });
+    
+    it.only('Test Step: Focus on DOM Element', () => {
+        cy.visit('https://www.fandom.com/')
+          .contains('Search').click({force:true})
+          //.get('[data-search-label-text]').click()
+          //.get('.class="wds-global-navigation__search-label-text').should('have.value','Search').click()
+          .type('paradise pd').should('have.value','archer')
+
+    });
 });
