@@ -14,6 +14,7 @@ describe('Test Case: for running Cypress tests', () => {
 
     it.only('Test Step: Sending input onto text field & verifying the input', () => {
         cy.visit('https://example.cypress.io/commands/actions')
+          .url().should('have','commands')
           .get('.action-email')
           .type('cypress@test.com').should('have.value','cypress@test.com');
     }); 
