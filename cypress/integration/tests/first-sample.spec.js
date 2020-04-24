@@ -21,10 +21,13 @@ describe('Test Case: for running Cypress tests', () => {
     
     it.only('Test Step: Focus on DOM Element', () => {
         cy.visit('https://www.fandom.com/')
-          .contains('Search').click({force:true})
+          //.contains('Search')
+          .get('span').contains('Search')
+          .dblclick({force:true})
+          //.click(contains('Search'), {force:true})
           //.get('[data-search-label-text]').click()
-          //.get('.class="wds-global-navigation__search-label-text').should('have.value','Search').click()
-          .type('paradise pd').should('have.value','archer')
-
+           
+          .type('paradise').should('have.value','paradise')
+          
     });
 });
