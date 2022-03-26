@@ -25,7 +25,7 @@
   "homepage": "https://github.com/giri-gonzai/cypressAutomationProject#readme",
   "dependencies": {
     "cypress": "^4.2.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "prettier": "^1.19.1"
   }
 }
